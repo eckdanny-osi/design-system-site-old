@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
+import { routerReducer as routing } from 'react-router-redux';
+import principles from './principles-reducer';
 
 export default combineReducers({
-  routing: routerReducer,
+  routing,
+  principles,
 });
